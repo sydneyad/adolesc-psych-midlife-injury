@@ -1,0 +1,98 @@
+
+! PROJECT: Add Health Adolescent Psychopathology & Midlife Injury 
+
+! PROGRAM PURPOSE: Running secondary analysis predicting count of waves 
+! here - adjusted externalizing model 
+
+! AUTHOR: Sydney Adams 
+
+! INPUT FILE: REVISED_sec_injwaves.csv (located in same directory as this 
+! script) 
+
+! ----------------------------------------------------------------------
+
+! Specify file  
+! note col name headers are not in the file, are named further below 
+! and note already re-coded all blanks to . 
+
+DATA:
+FILE = 
+REVISED_sec_injwaves.csv;
+
+VARIABLE: 
+NAMES = 
+AID PSUSCID REGION GSW5 w5_age w1_ses w1_cog any_mh int_mh ext_mh miss_wvs 
+len_samp con_samp n_inj_wv hispanic female black amer_in 
+asian_pi race_oth multirac n_injwv2 ; 
+
+! Name weight, stratification, and cluster variables 
+WEIGHT = GSW5; 
+STRATIFICATION = REGION;  
+CLUSTER = PSUSCID; 
+
+! Indicate subpopulation
+! There's a lenient sample indicator and a conservative indicator 
+SUBPOPULATION IS len_samp == 1; 
+
+! Indicator for missingness 
+MISSING = .; 
+
+! Indicate variables to be used in analysis 
+USEVARIABLES = 
+ext_mh w5_age hispanic female black amer_in asian_pi race_oth 
+multirac n_inj_wv w1_ses w1_cog ; 
+
+! Identify outcome as a count variable 
+! nb indicates negative binomial
+COUNT = n_inj_wv (nb) ;  
+
+! Indicate this is a complex design  
+ANALYSIS: 
+TYPE = complex; 
+
+! can test ML instead of MLR, and procedure to prevent listwise deletion for missingness
+
+! ESTIMATOR = ml; 
+! INTEGRATION = montecarlo;
+
+! Request CI's 
+OUTPUT: 
+cinterval 
+
+! Specify regression model 
+! Adding labels to parameters to use in model constraint statement 
+!  to exponentiate coefficients later 
+
+MODEL: 
+n_inj_wv ON 
+ ext_mh (emh1)
+ w5_age (ag1)
+ female (f1)
+ hispanic (h1)  
+ black (b1) 
+ asian_pi (as1) 
+ amer_in (ai1) 
+ race_oth (o1) 
+ multirac (m1)
+ w1_ses (s1)
+ w1_cog (c1); 
+
+ ! As a test re: the above - Adding this allows for estimation with missing values ; 
+ ! [any_mh female hispanic black asian_pi amer_in race_oth multirac];
+
+ MODEL CONSTRAINT: 
+ new(ext_exp age_exp fem_exp hisp_exp black_exp aspi_exp 
+     amerin_exp oth_exp multi_exp ses_exp cog_exp); 
+     
+ ext_exp = exp(emh1); 
+ age_exp = exp(ag1); 
+ fem_exp = exp(f1); 
+ hisp_exp = exp(h1);  
+ black_exp = exp(b1); 
+ aspi_exp = exp(as1); 
+ amerin_exp = exp(ai1); 
+ oth_exp = exp(o1); 
+ multi_exp = exp(m1); 
+ ses_exp = exp(s1); 
+ cog_exp = exp(c1); 
+
