@@ -294,9 +294,8 @@ proc sort data=sec_inj_waves; by aid; run;
 
 proc contents data=sec_inj_waves; run; 
 
-proc print data=sec_inj_waves (obs=5); run; 
-** Cofnrim N; 
 
+** Confirm N; 
 proc sql; 
 	select count(*) as main_lenient_n, max(miss_wvs) as max_miss_wvs, mean(n_inj_wv) as mean_n_inj_wv,
 	mean(any_mh) as prev_mh 
@@ -358,4 +357,5 @@ run;
 
 * !!NOTE!! before reading that CSV into M-plus, need to make a revised version 
 that deletes the header row and also replaces all blank cells with . ; 
+
 
