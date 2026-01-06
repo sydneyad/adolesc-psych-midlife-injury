@@ -1,7 +1,7 @@
 
 ! PROJECT: Add Health Adolescent Psychopathology & Midlife Injury 
 
-! PROGRAM PURPOSE: Running secondary analysis predicting count of waves 
+! (MPLUS) PROGRAM PURPOSE: Running secondary analysis predicting count of waves 
 ! here - adjusted internalizing model 
 
 ! AUTHOR: Sydney Adams 
@@ -95,4 +95,5 @@ n_inj_wv ON
  multi_exp = exp(m1); 
  ses_exp = exp(s1); 
  cog_exp = exp(c1); 
+
 
