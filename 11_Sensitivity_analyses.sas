@@ -9,12 +9,16 @@
 *                 (4) Re-run with alternate (leniant) assault inj def 
 *                 (5) Run analysis predicting high-frequency falls at midlife 
 *				  (6) Run analysis using just prospectively assessed MH conditions  
+*				  (7) Run analysis using continuous indicators of prospectively assessed MH 
 * AUTHOR: Sydney M. Adams
 * INPUT FILE(S):  AHdata.analytic
 * OUTPUT FILE(S): sens_alt_cons_suicide.xlsx
 *				  sens_altadhd.xlsx
 *			      sens_altcohort_nosui_noassau.xlsx
 *				  sens_alt_len_assault.xlsx
+*				  sense_prospective_mh.xlsx 
+*				  sens_cont_prospective_mh.xlsx
+*				
 * RELEVANT RESULTS IN MANUSCRIPT: Table S5, Sensitivity Tests 
 *
 **************************************************************************************************************;
@@ -417,3 +421,4 @@ a one-unit change in CESD/conduct symptom scale.;
 %run_adjusted_log_reg(data=analytic_cont_prosp2, mh_pred=w1_conduct_prorate, outcome=w5_py_serious_injury);  
 
 ods excel close; 
+
