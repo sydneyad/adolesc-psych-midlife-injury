@@ -7,13 +7,13 @@ Psychopathology is associated with physical injury, but research has largely con
 ## Table of Contents
 
 ### 1_Identifying_weights_designvars.sas
-- Reads-in the Wave V complex survey design variables and flags participants for whom they are missing 
+- Reads-in the Wave V complex survey design variables and flags participants for whom they are missing.
 ### 2_Defining_covariates.sas
-- Reads-in data from Waves I and V, as well as the constructed SES data, and creates indicators of the study covariates (Wave V age, sex, race, ethnicity, SES, cognitive ability) 
+- Reads-in data from Waves I and V, as well as the constructed SES data, and creates indicators of the study covariates.
 ### 3_Defining_adol_psych_predictors.sas
 - Reads-in data from Waves I, II, IV, and V and creates indicators of any, internalizing, and externalizing psychopathology during adolescence. 
 ### 4_Defining_outcomes.sas
-- Reads-in data from Wave V and creates indicators of the injury and midlife contextual circumstance outcomes. 
+- Reads-in data from Wave V and creates indicators of the injury and midlife contextual circumstance outcomes.
 ### 5_Identifying_analytic_sample.sas
 - Reads-in datasets created in scripts #1-4, joins them together to generate an analytic dataset with N=10,363 participants flagged as being in the analytic sample. See Figure S1. 
 ### 6_Descriptives_and_Aims_1_2.sas
@@ -33,17 +33,17 @@ Psychopathology is associated with physical injury, but research has largely con
 ### 12_Secondary_cumulative_injuries_prep.sas
 - Reads-in data from the study analytic file and the Add Health waves I, II, and IV, to create an indicator of accumulating reports of injury across waves. Prepares a CSV file for analysis of this secondary outcome in M-Plus. See "Cumulative Injury Reports Across Waves" row in Table S1. 
 ### 13_Sec_count_inj_waves_neg_binom_analysis_ANY-ADJ.inp 
-- An M-Plus file running an adjusted negative binomial regression analysis of any adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S6. 
+- An M-Plus file running a negative binomial regression analysis of any adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S6. 
 ### 14_Sec_count_inj_waves_neg_binom_analysis_INT-ADJ.inp
-- An M-Plus file running an adjusted negative binomial regression analysis of internalizing adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S6. 
+- An M-Plus file running a negative binomial regression analysis of internalizing adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S6. 
 ### 15_Sec_count_inj_waves_neg_binom_analysis_EXT-ADJ.inp 
-- An M-Plus file running an adjusted negative binomial regression analysis of externalizing adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S6. 
+- An M-Plus file running a negative binomial regression analysis of externalizing adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S6. 
 
 ## Authors
-### Code Authors
-Sydney M. Adams, Kallisse R. Dent, Leah S. Richmond-Rakerd 
 ### Manucript Authors 
 Sydney M. Adams, Kallisse R. Dent, Lara Khalifeh, Leah S. Richmond-Rakerd 
+### Code Authors
+Sydney M. Adams, Kallisse R. Dent, Leah S. Richmond-Rakerd 
 
 ## Acknowledgements 
 This research uses data from Add Health, funded by grant P01 HD31921 (Harris) from the Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD), with cooperative funding from 23 other federal agencies and foundations. Add Health is currently directed by Robert A. Hummer and funded by the National Institute on Aging cooperative agreements U01, AG071448 (Hummer) and U01AG071450 (Aiello and Hummer) at the University of North Carolina at Chapel Hill. Add Health was designed by J. Richard Udry, Peter S. Bearman, and Kathleen Mullan Harris at the University of North Carolina at Chapel Hill. No direct support was received from grant P01-HD31921 for this analysis. 
