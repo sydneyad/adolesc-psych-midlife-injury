@@ -20,7 +20,7 @@
 *				  sens_cont_prospective_mh.xlsx
 *				
 * RELEVANT RESULTS IN MANUSCRIPT: Table S5, Sensitivity Tests 
-*
+*								  Table S6, Secondary Injury Outcomes 
 **************************************************************************************************************;
 
 libname AHdata "P:\AddHealth\Contract\29042102-RichmondRakerd\Work\Sydney Adams\619_Midlife_injury_project\Intermediate_Data"  ; 
@@ -421,4 +421,5 @@ a one-unit change in CESD/conduct symptom scale.;
 %run_adjusted_log_reg(data=analytic_cont_prosp2, mh_pred=w1_conduct_prorate, outcome=w5_py_serious_injury);  
 
 ods excel close; 
+
 
