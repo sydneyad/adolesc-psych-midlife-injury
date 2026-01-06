@@ -1,7 +1,7 @@
 
 ! PROJECT: Add Health Adolescent Psychopathology & Midlife Injury 
 
-! PROGRAM PURPOSE: Running secondary analysis predicting count of waves 
+! (MPLUS) PROGRAM PURPOSE: Running secondary analysis predicting count of waves 
 ! at which ptcpt reported unintentional injury - this specifically is 
 ! main fully adjusted analysis, with any psychopathology as predictor 
 
@@ -109,4 +109,5 @@ n_inj_wv ON
 
 
  
+
 
