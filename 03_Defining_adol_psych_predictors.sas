@@ -588,7 +588,7 @@ data covariates_predictors_final;
 if (adol_adhd=1 or adol_anxiety=1 or adol_depression_agelimit=1 or adol_eatingdis=1 or adol_ptsd=1 
 	or depression_cesd=1 or w1_conduct_disorder_prorate=1) then any_adol_mh=1; 
 	else if (adol_adhd=. and adol_anxiety=. and adol_depression_agelimit=. and adol_eatingdis=. and adol_ptsd=.
-	and depression_cesd=. and w1_conduct_disorder_prorate=.) then any_adol_mh=.; /* consistent with KD's in that have to be missing on all to be missing */ 
+	and depression_cesd=. and w1_conduct_disorder_prorate=.) then any_adol_mh=.; 
 	else any_adol_mh=0; 
 
 *** ALT Any Adolesc Mental Health 
@@ -638,4 +638,5 @@ data AHdata.covariates_predictors_final;
 run; * n=20,745; 
 
 proc contents data=AHdata.covariates_predictors_final; run; 
+
 
