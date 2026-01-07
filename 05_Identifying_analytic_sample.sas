@@ -46,7 +46,7 @@ run;
 
 /* STEP ONE. Moving from total AH Wave V Pop. to Only Those w/ Non-Miss Design Vars. 
    -and-
-   STEP TWO. Flag those missing on any injurt outcome as in_analytic=0 */
+   STEP TWO. Flag those missing on any injury outcome as in_analytic=0 */
 
 proc freq data=all_w5; table missing_design_vars; run; *12,057 w/ non-missing design vars ; 
 
@@ -343,4 +343,5 @@ run;
 	data AHdata.expanded_analytic_forsibs; 
 		set flag_miss_covars2_sib;
 	run; 
+
 
