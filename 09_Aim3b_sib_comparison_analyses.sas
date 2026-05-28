@@ -7,8 +7,7 @@
 * OUTPUT FILE(S): sib_output.xlsx
 *				  sib_pair_type_checks.xlsx 
 * RELEVANT RESULTS IN MANUSCRIPT: 
-*  Sample-wide and sibling-comparison analyses are reported in the text (Results) 
-*  Test of sibling-comparison excluding unrelated siblings is reported in Table S5, Sensitivity Tests 
+*  Table S3 - Secondary Discordant Sibling-Comparison Analysis, Results 
 *
 **************************************************************************************************************;
 
@@ -245,7 +244,7 @@ proc freq data=sib_informative_dropun; table any_adol_mh*w5_py_serious_injury; r
 * Run models, unadjusted and adjusted; 
 %adj_sib_comparison(data=sib_informative_dropun, class_vars=, covariates=);
 
-** See Table S5, Sensitivity Tests; 
+** Sensitivity test (reported in Table S3, Results); 
 %adj_sib_comparison(data=sib_informative_dropun, class_vars=w1_sex w1_race, 
 					covariates=w1_sex w5_age w1_race w1_hispanic_ethnicity w1_ses w1_cog_ability); 
 
