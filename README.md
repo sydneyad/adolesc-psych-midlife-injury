@@ -2,7 +2,11 @@
 
 ## Project Abstract 
 
-Psychopathology is associated with physical injury, but research has largely concerned intentional self-injury, individual mental-health conditions, and childhood injuries. In a U.S. cohort (N=10,363), we tested whether adolescents with psychopathology were more likely to experience injuries and circumstances complicating injury recovery in early midlife. Adolescents with psychopathology had elevated risk of midlife assault injury (OR=2.99 [2.23-3.99]) and unintentional injury (OR=1.41 [1.18-1.67]), in addition to intentional self-injury (OR=2.49 [1.60-3.87]), after accounting for demographics, adolescent socioeconomic status, and adolescent cognitive ability. Associations with assault and unintentional injury were evident for internalizing and externalizing psychopathology. Siblings with psychopathology were not more likely to experience unintentional injury than their co-siblings without psychopathology, but estimates were imprecise and informed by few families. Adolescents with psychopathology were more likely to experience fair-to-poor self-rated health, low social support, unemployment, lack of health insurance, and unmet healthcare need in midlife. Supporting adolescents’ mental health may prevent midlife injuries.
+**Purpose:** Psychopathology is associated with physical injury, but research has largely focused on intentional self-injuries, individual mental-health conditions, and injuries sustained during childhood. It remains unclear whether (a) psychopathology is associated with unintentional injury, (b) associations are evident for both internalizing and externalizing conditions, and (c) associations extend into early midlife. Additionally, individuals with a history of psychopathology may be more likely to experience injury-complicating contextual circumstances, but these have not yet been explored.  
+**Methods:** This cohort study tested whether adolescents with psychopathology were more likely to experience injuries and circumstances complicating injury recovery in early midlife. Participants (N=10,363) were from the National Longitudinal Study of Adolescent to Adult Health. Adolescent psychopathology was measured using prospectively-reported symptoms and retrospectively-reported diagnoses. Past-year injuries and injury-complicating circumstances were self-reported at midlife. 
+**Results:** Adolescents with psychopathology had elevated risk of midlife assault injury (OR=2.99 [2.23-3.99]) and unintentional injury (OR=1.41 [1.18-1.67]), in addition to suicide attempt;  OR=2.49 [1.60-3.87]),    after accounting for demographics, adolescent socioeconomic status, and adolescent cognitive ability. Associations with assault injury and unintentional injury were evident for both internalizing and externalizing psychopathology. Adolescents with psychopathology were more likely to experience midlife circumstances complicating injury recovery, including fair-to-poor self-rated health, low social support, unemployment, lack of health insurance, and unmet healthcare need. 
+**Conclusion:** These findings identify adolescent psychopathology as an indicator of risk for early-midlife injury and support the integration of injury-prevention efforts with mental-health care. These efforts should consider multiple types of mental-health concerns, injury causes, and contextual circumstances. 
+
  
 ## Table of Contents
 
@@ -21,23 +25,23 @@ Psychopathology is associated with physical injury, but research has largely con
 ### 07_Aim3a_adjusted_models.sas
 - Generates fully-adjusted estimates of the associations of (any, internalizing, and externalizing) adoelscent psychopathology with the midlife injury outcomes. See Table 2. 
 ### 08_Aim3b_sibling_comparison_prep_qa.sas
-- Reads-in the Add Health sibling pairs data file and joins it with information on the study analytic variables. Identifies the sibling-comparison sample. See Figure S2. 
+- In preparation for a secondary sibling-comparison analysis, reads-in the Add Health sibling pairs data file and joins it with information on the study analytic variables. Identifies the sibling-comparison sample. See Table S3 and Figure S2. 
 ### 09_Aim3b_sib_comparison_analyses.sas
-- Generates sample descriptives, cross-tabulations of psychopathology with injury, sample-wide associations, and sibling-comparison associations of psychopathology with injury in the sibling-comparison sample. See Results text.  
+- Generates sample descriptives, cross-tabulations of psychopathology with injury, sample-wide associations, and sibling-comparison associations of psychopathology with injury in the sibling-comparison sample. See Table S3.  
 ### 09b_Aim3b_sib_comparing_samples_expl_attrition.sas
-- Examines sample characteristics for the starting and analytic samples, for both the overall study sample and the sibling-comparison sample. See Table S3. 
+- Examines sample characteristics for the starting and analytic samples, for both the overall study sample and the sibling-comparison sample. See Table S4. 
 ### 10_Aim4_midlife_circumstance_models.sas
-- Generates descriptive statistics, demographic-adjusted associations, and fully-adjusted associations for the analyses of psychopathology and difficult midlife circumstances. See Figure 2 and Table S4. 
+- Generates descriptive statistics, demographic-adjusted associations, and fully-adjusted associations for the analyses of psychopathology and difficult midlife circumstances. See Figure 2 and Table S5. 
 ### 11_Sensitivity_analyses.sas
--  Runs various secondary and sensitivity analyses testing alternate variable definitions and cohorts. See Table S5 and Table S6.
+-  Runs various secondary and sensitivity analyses testing alternate variable definitions and cohorts. See Table S6 and Table S7.
 ### 12_Secondary_cumulative_injuries_prep.sas
 - Reads-in data from the study analytic file and the Add Health waves I, II, and IV, to create an indicator of accumulating reports of injury across waves. Prepares a CSV file for analysis of this secondary outcome in M-Plus. See "Cumulative Injury Reports Across Waves" row in Table S1. 
 ### 13_Sec_count_inj_waves_neg_binom_analysis_ANY-ADJ.inp 
-- An M-Plus file running a negative binomial regression analysis of any adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S6. 
+- An M-Plus file running a negative binomial regression analysis of any adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S7. 
 ### 14_Sec_count_inj_waves_neg_binom_analysis_INT-ADJ.inp
-- An M-Plus file running a negative binomial regression analysis of internalizing adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S6. 
+- An M-Plus file running a negative binomial regression analysis of internalizing adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S7. 
 ### 15_Sec_count_inj_waves_neg_binom_analysis_EXT-ADJ.inp 
-- An M-Plus file running a negative binomial regression analysis of externalizing adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S6. 
+- An M-Plus file running a negative binomial regression analysis of externalizing adolescent psychopathology and cumulative reports of past-year injury through midlife. See Table S7. 
 
 ## Authors
 ### Manucript Authors 
