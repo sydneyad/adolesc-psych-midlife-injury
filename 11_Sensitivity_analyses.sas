@@ -19,8 +19,8 @@
 *				  sense_prospective_mh.xlsx 
 *				  sens_cont_prospective_mh.xlsx
 *				
-* RELEVANT RESULTS IN MANUSCRIPT: Table S5, Sensitivity Tests 
-*								  Table S6, Secondary Injury Outcomes 
+* RELEVANT RESULTS IN MANUSCRIPT: Table S6, Sensitivity Tests 
+*								  Table S7, Secondary Injury Outcomes 
 **************************************************************************************************************;
 
 libname AHdata "P:\AddHealth\Contract\29042102-RichmondRakerd\Work\Sydney Adams\619_Midlife_injury_project\Intermediate_Data"  ; 
@@ -115,7 +115,7 @@ proc surveyfreq data=analytic missing;
 	weight analytic_wt; 
 run; 
 
-** See Table S5; 
+** See Table S6; 
 
 * alt any ; 
 %run_adjusted_log_reg(data=analytic, mh_pred=alt_any_adol_mh_adhd, outcome=w5_py_suicide_attempt); 
@@ -182,7 +182,7 @@ proc surveyfreq data=alt_analytic missing;
 	weight analytic_wt; 
 run; 
  
-** See Table S5; 
+** See Table S6; 
 %run_adjusted_log_reg(data=alt_analytic, mh_pred=any_adol_mh, outcome=w5_py_serious_injury); 
 %run_adjusted_log_reg(data=alt_analytic, mh_pred=int_adol_mh, outcome=w5_py_serious_injury); 
 %run_adjusted_log_reg(data=alt_analytic, mh_pred=ext_adol_mh, outcome=w5_py_serious_injury); 
@@ -208,7 +208,7 @@ proc surveyfreq data=analytic missing;
 run; 
 
 
-** See Table S5; 
+** See Table S6; 
 %run_adjusted_log_reg(data=analytic, mh_pred=any_adol_mh, outcome=w5_alt_sui_attempt_inj);  
 %run_adjusted_log_reg(data=analytic, mh_pred=int_adol_mh, outcome=w5_alt_sui_attempt_inj);
 %run_adjusted_log_reg(data=analytic, mh_pred=ext_adol_mh, outcome=w5_alt_sui_attempt_inj); 
@@ -244,7 +244,7 @@ proc surveyfreq data=alt_assault missing;
 run;
 
 
-** See Table S5; 
+** See Table S6; 
 %run_adjusted_log_reg(data=alt_assault, mh_pred=any_adol_mh, outcome=w5_alt_lenient_assault_inj);   
 %run_adjusted_log_reg(data=alt_assault, mh_pred=int_adol_mh, outcome=w5_alt_lenient_assault_inj);  
 %run_adjusted_log_reg(data=alt_assault, mh_pred=ext_adol_mh, outcome=w5_alt_lenient_assault_inj);
@@ -283,7 +283,7 @@ proc surveyfreq data=alt_falls missing;
 	weight analytic_wt; 
 run;
 
-*run models - See Table S6; 
+*run models - See Table S7; 
 %run_adjusted_log_reg(data=alt_falls, mh_pred=any_adol_mh, outcome=w5_bin_hf_falls); 
 %run_adjusted_log_reg(data=alt_falls, mh_pred=int_adol_mh, outcome=w5_bin_hf_falls);  
 %run_adjusted_log_reg(data=alt_falls, mh_pred=ext_adol_mh, outcome=w5_bin_hf_falls);  
@@ -339,7 +339,7 @@ run;
 ** quick check; 
 proc means data=analytic_prosp2 n nmiss; var w5_py_serious_injury; run; 
 
-** run models - see Table S5; 
+** run models - see Table S6; 
 %run_adjusted_log_reg(data=analytic_prosp2, mh_pred=prosp_adol_mh, outcome=w5_py_serious_injury); 
 %run_adjusted_log_reg(data=analytic_prosp2, mh_pred=w1_w2_cesd_depression, outcome=w5_py_serious_injury); 
 %run_adjusted_log_reg(data=analytic_prosp2, mh_pred=w1_conduct_dis_prorated, outcome=w5_py_serious_injury); 
@@ -415,7 +415,7 @@ run;
 ** Run models - re-use macro, but note OR now represents the change in odds of injury associated with 
 a one-unit change in CESD/conduct symptom scale.; 
 
-** See Table S5; 
+** See Table S6; 
 %run_adjusted_log_reg(data=analytic_cont_prosp2, mh_pred=w1_cesd_sum_scaled, outcome=w5_py_serious_injury);
 
 %run_adjusted_log_reg(data=analytic_cont_prosp2, mh_pred=w1_conduct_prorate, outcome=w5_py_serious_injury);  
