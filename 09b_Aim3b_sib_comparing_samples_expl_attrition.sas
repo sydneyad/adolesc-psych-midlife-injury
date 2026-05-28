@@ -8,7 +8,7 @@
 *				 pairs.xpt from AH 
 *		         AHdata.sibling_analytic.sas
 * OUTPUT FILE(S): characterizing_samples.xlsx
-* RELEVANT RESULTS IN MANUSCRIPT: Table S3, unweighted characteristics of starting and analytic samples 				
+* RELEVANT RESULTS IN MANUSCRIPT: Table S4, Unweighted characteristics of starting and analytic samples 				
 *
 ************************************************************************************************************; 
 
