@@ -8,8 +8,8 @@
 * 
 * OUTPUT FILE(S): AHdata.starting_sibs.sas7bdat, AHdata.sibling_analytic.sas7bdat
 * RELEVANT RESULTS IN MANUSCRIPT: 
-	Figure S2 - Deriving sibling-comparison sample  
-	Table S1 - See reports of within-sibling concordance on SES in "Socioeconomic Status" row. 
+	Figure S2 - Deriving Sibling-Comparison Sample  
+	Table S3 - Secondary Discordant Sibling-Comparison Analysis (Methods) 
 * !NOTE! A transpose step in this script will throw an error in SAS Enterprise Guide but run without issue in SAS 9.3. 
 *
 **********************************************************************************************************************; 
@@ -135,7 +135,7 @@ proc sql;
 		   count(*) as n_rows 
     from widesib_analytic_2 (where=(sibcl4 ne "delete")); 
 quit; 
-run; *957 pairs from 878 families. This is replicated later in this script and reported in Methods text. ; 
+run; *957 pairs from 878 families. This is replicated later in this script and reported in Table S3. ; 
 	
 proc print data=widesib_analytic_2 (obs=10); run; 
 proc print data=widesib_analytic_2 (obs=5); where sibcl4="delete"; run;
@@ -197,7 +197,7 @@ proc corr data=widesib_analytic3;
 	by sibcl4; 
 run; 
 
-** Zooming in on SES concordance to report in paper supplement. See "Socioeconomic Status" in Table S1; 
+** Zooming in on SES concordance to report in paper supplement. See Methods in Table S3; 
 proc corr data=widesib_analytic3; 
 	var  ses_adol1;
 	with ses_adol2; 
