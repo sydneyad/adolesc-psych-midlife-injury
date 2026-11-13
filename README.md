@@ -3,16 +3,16 @@
 ## Project Abstract 
 
 **Purpose:**
-Psychopathology is associated with physical injury, but research has largely focused on intentional self-injuries, individual mental-health conditions, and injuries sustained during childhood. It remains unclear whether (a) psychopathology is associated with unintentional injury, (b) associations are evident for both internalizing and externalizing conditions, and (c) associations extend into early midlife. Additionally, individuals with a history of psychopathology may be more likely to experience injury-complicating contextual circumstances, but these have not been sufficiently explored.    
+Psychopathology is associated with physical injury, but research has largely focused on intentional self-injuries, individual mental-health conditions, and injuries sustained during childhood. It remains unclear whether (a) adolescent psychopathology is associated with unintentional injury, (b) associations are evident for both internalizing and externalizing conditions, and (c) associations extend into early midlife. We tested whether adolescents with psychopathology were more likely to experience injuries and circumstances complicating injury recovery in early midlife.
 
 **Methods:** 
-This cohort study tested whether adolescents with psychopathology were more likely to experience injuries and circumstances complicating injury recovery in early midlife. Participants (N=10,363) were from the National Longitudinal Study of Adolescent to Adult Health. Adolescent psychopathology was measured using prospectively-reported symptoms and retrospectively-reported diagnoses. Past-year injuries and injury-complicating circumstances were self-reported at midlife. 
+Participants (N=10,363) were from the National Longitudinal Study of Adolescent to Adult Health. Adolescent psychopathology included internalizing (depression, anxiety, post-traumatic stress disorder, and eating disorders) and externalizing (conduct disorder and attention-deficit/hyperactivity disorder) conditions at ages 11-18. Past-year injuries and injury-complicating circumstances were assessed at ages 33-43. 
 
 **Results:** 
-Adolescents with psychopathology had elevated risk of midlife assault injury (OR=2.99 [2.23-3.99]) and unintentional injury (OR=1.41 [1.18-1.67]), in addition to suicide attempt (OR=2.49 [1.60-3.87]),    after accounting for demographics, adolescent socioeconomic status, and adolescent cognitive ability. Associations with assault injury and unintentional injury were evident for both internalizing and externalizing psychopathology. Adolescents with psychopathology were more likely to experience midlife circumstances complicating injury recovery, including low social support, unemployment, lack of health insurance, fair-to-poor self-rated health, and unmet healthcare need. 
+Adolescents with psychopathology had elevated risk of midlife assault injury (OR=2.99 [2.23-3.99]) and unintentional injury (OR=1.41 [1.18-1.67]), in addition to suicide attempt (OR=2.49 [1.60-3.87]), after accounting for demographics, adolescent socioeconomic status, and adolescent cognitive ability. Associations with assault injury and unintentional injury were evident for internalizing and externalizing psychopathology. Adolescents with psychopathology were more likely to experience midlife circumstances complicating injury recovery, including low social support, unemployment, lack of health insurance, fair-to-poor self-rated health, and unmet healthcare need. 
 
-**Conclusion:**
-These findings identify adolescent psychopathology as an indicator of risk for early-midlife injury and support the integration of injury-prevention efforts with mental-health care. These efforts should consider multiple types of mental-health concerns, injury causes, and contextual circumstances. 
+**Discussion:**
+Findings identify adolescent psychopathology as an indicator of risk for early-midlife injury and support the integration of injury-prevention efforts (for instance, assessment and safety-planning regarding modifiable risk factors) within mental-health care. These efforts should consider diverse mental-health conditions, multiple injury causes, and socioeconomic and health-related barriers that may complicate injury recovery. 
 
 ## Table of Contents
 
